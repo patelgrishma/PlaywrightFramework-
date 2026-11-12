@@ -11,11 +11,7 @@ export class Dashboard
     }
     getSidebarItem(menuName: string): Locator
     {
-        return this.page.getByRole('link', {name: menuName, exact:true})
-    }
-    async navigate(menuName:string)
-    {
-        await this.getSidebarItem(menuName).click({timeout: 10000})
+        return this.page.getByText(menuName)
     }
 
 }
