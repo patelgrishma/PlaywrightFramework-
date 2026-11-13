@@ -18,9 +18,9 @@ pipeline {
 
        // bat 'npx playwright test'
 
-        sh 'npm install'
+        bat 'npm install'
 
-        sh 'npx playwright test '
+        bat 'npx playwright test '
 
       }
 
